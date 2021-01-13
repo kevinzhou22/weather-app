@@ -1,3 +1,21 @@
 html {
   font-size: 10px;
 }
+
+.header {
+  display: flex;
+  align-items: flex-end;
+}
+
+.header .search-bar {
+  padding: 0.7rem 1rem;
+  margin-right: 2rem;
+  background-color: rgba(220,220,220,0.5);
+  color: white;
+  border-radius: 4px;
+}
+
+.search-bar .search-city-button {
+  border: none;
+  padding: 0;
+}
