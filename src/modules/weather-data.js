@@ -4,8 +4,7 @@ const WEATHER_API_KEY = 'a8424d99c006aad91cd2f7bbd65ae592';
 
 /* returns an object from OpenWeatherMap containing the weather data for a given city.
 If the city is not found, returns null. */
-const fetchWeatherDataFromAPI = async function fetchWeatherData(city, country = null) {
-  const location = `${city}${country === null ? '' : `,${country}`}`;
+const fetchWeatherDataFromAPI = async function fetchWeatherData(location) {
   const searchQuery = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${WEATHER_API_KEY}`;
 
   const response = await fetch(searchQuery, { mode: 'cors' });
@@ -44,10 +43,10 @@ class CityWeatherData {
 /* default export of module
 Returns a CityWeatherData object containing the weather data for a city
 at a given moment if the city is found or null if it is not found */
-const getWeatherData = async function getWeatherData(city, country = null) {
+const getWeatherData = async function getWeatherData(location) {
   let fetchedWeatherData;
   try {
-    fetchedWeatherData = await fetchWeatherDataFromAPI(city, country);
+    fetchedWeatherData = await fetchWeatherDataFromAPI(location);
   } catch (error) {
     if (error.message === 'HTTP-Error: 404') return null;
     throw error;
