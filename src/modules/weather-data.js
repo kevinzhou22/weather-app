@@ -36,6 +36,8 @@ class CityWeatherData {
     this.windSpeed = fetchedWeatherData.wind.speed;
     // unix, UTC
     this.dateTime = fetchedWeatherData.dt;
+    this.cityName = fetchedWeatherData.name;
+    this.countryCode = fetchedWeatherData.sys.country;
   }
 }
 
