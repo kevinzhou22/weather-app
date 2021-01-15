@@ -53,6 +53,8 @@ html {
 }
 
 .search-bar input {
+  appearance: none;
+  -webkit-appearance: none;
   border: none;
   background-color: transparent;
   color: white;
