@@ -52,7 +52,7 @@ html {
   color: white;
 }
 
-.search-bar input[type="text"] {
+.search-bar input {
   border: none;
   background-color: transparent;
   color: white;
