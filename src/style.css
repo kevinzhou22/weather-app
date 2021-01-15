@@ -63,19 +63,19 @@ html {
   font-size: 2.2rem;
 }
 
-.search-bar input[type="text"]::-webkit-input-placeholder {
+.search-bar input::-webkit-input-placeholder {
   color: white;
 }
 
-.search-bar input[type="text"]::-moz-placeholder {
+.search-bar input::-moz-placeholder {
   color: white;
 }
 
-.search-bar input[type="text"]:-ms-input-placeholder {
+.search-bar input:-ms-input-placeholder {
   color: white;
 }
 
-.search-bar input[type="text"]:-moz-placeholder {
+.search-bar input:-moz-placeholder {
   color: white;
 }
 
