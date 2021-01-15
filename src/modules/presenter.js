@@ -1,5 +1,5 @@
 import getWeatherData from './weather-data';
-import { on } from './events';
+import { on, emit } from './events';
 import {
   setWeatherLocation,
   setWeatherTemperature,
@@ -79,3 +79,11 @@ const onCitySearched = async function onCitySearched(eventData) {
 };
 
 on(domControllerEventsEmitted.CITY_SEARCHED, onCitySearched);
+
+// initialize website
+
+const initialCity = {
+  location: 'Boston',
+};
+
+emit(domControllerEventsEmitted.CITY_SEARCHED, initialCity);
