@@ -78,4 +78,5 @@ export {
   setWeatherFeelsLikeTemperature,
   setWeatherType,
   setBackgroundImage,
+  eventsEmitted,
 };
