@@ -6,7 +6,6 @@ html {
   height: 100vh;
   width: 100vw;
   background-size: cover;
-  background-image: url('./images/clouds.jpg');
   font-family: 'Roboto', sans-serif;
 }
 
@@ -45,7 +44,7 @@ html {
 }
 
 .search-bar .search-city-button i {
-  background-color: none;
+  background-color: transparent;
   border: none;
   padding: 0;
   margin: 0.8rem;
@@ -91,7 +90,7 @@ html {
 
 .weather-information-card .temperature {
   font-size: 12rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .weather-information-card .temperature::after {
@@ -114,5 +113,6 @@ html {
 .weather-information-card .weather-type {
   font-size: 3rem;
   margin-top: 1.5rem;
+  text-transform: capitalize;
 }
 
